@@ -12,9 +12,10 @@ class App < Sinatra::Base
 
   post '/create_puppy' do
     @puppy = Puppy.new
+    erb :display_puppy
   end
-  
 
-  
+
+
 
 end
